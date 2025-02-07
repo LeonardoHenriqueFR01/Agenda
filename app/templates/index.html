@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="content-cadastro" id="cadastro">
+
+            <h1>Cadastro</h1>
+
+            <form action="/submit" method="POST" autocomplete="off">
+
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required maxlength="40">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" required minlength="8" maxlength="20">
+
+                <p>Já tem uma conta? <a href="#" onclick="form_login()">Clique aqui para fazer Login</a></p>
+
+                <a href="/submit">
+
+                    <button>Cadastrar</button>
+
+                </a>
+
+            </form>      
+
+        </div>
+
+        <div class="content-login" id="login">
+
+            <h1>Login</h1>
+
+            <form action="/submit" method="POST" autocomplete="off">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" required minlength="8" maxlength="20">
+
+                <p>Não tem uma conta? <a href="#" onclick="form_cadastro()">Clique aqui para Cadastrar</a></p>
+
+                <a href="/submit">
+
+                    <button>Login</button>
+
+                </a>
+
+            </form>      
+
+        </div>
+
+    </div>
+
+    <script src="../static/js/index.js"></script>
+
+</body>
+
+</html>
