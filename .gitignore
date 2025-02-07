@@ -1,0 +1,19 @@
+# Arquivos do sistema
+*.log
+*.env
+*.DS_Store
+
+# Dependências do projeto
+node_modules/
+venv/
+__pycache__/
+
+# Configurações locais
+.env
+config.json
+secrets.json
+
+# Arquivos de compilação e cache
+*.pyc
+*.pyo
+*.swp
