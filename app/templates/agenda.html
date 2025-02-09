@@ -15,10 +15,66 @@
     
     <div class="container">
 
-        <div class="agenda-parcelado">
+        <div class="menu-principal" id="menu-principal">
+
+             <header>
+
+                <div class="logo">
+
+                    <img src="../static/imagens/logo.png" alt="Logo ClientNote">
+
+                    <h1>ClientNote</h1>
+
+                </div>
+
+                <p>Leonardo</p>
+
+                <div class="menu-hamburger">
+                
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                
+                    </div>
+                
+                    <nav class="menu">
+                
+                        <ul>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    
+                    </nav>
+                
+                </div>                
+             
+            </header>
+
+            <h1>Cadastre aqui seus clientes</h1>
+
+            <div class="btn-clientes">
+
+                <button>Meus clientes</button>
+
+                <div class="btn-cadastrar">
+
+                    <h2>Área de Cadastro:</h2>
+
+                    <button id="btn-avista" onclick="btn_avista()">Cliente Avista</button>
+
+                    <button id="btn-financiamento" onclick="btn_financiamento()">Cliente Financiamento</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="agenda-parcelado" id="agenda-parcelado">
 
             <div>
-                <a href="#">
+                <a href="#" onclick="menu_principal()">
                     
                     <img src="../static/imagens/seta-voltar.png" alt="seta para voltar para paǵina anterior" width="40px">
                 
@@ -58,10 +114,10 @@
 
         </div>
 
-        <div class="agenda-avista">
+        <div class="agenda-avista" id="agenda-avista">
 
             <div>
-                <a href="#">
+                <a href="#" onclick="menu_principal()">
                     
                     <img src="../static/imagens/seta-voltar.png" alt="seta para voltar para paǵina anterior" width="40px">
                 
@@ -95,6 +151,8 @@
         </div>
 
     </div>
+
+    <script src="../static/js/agenda.js"></script>
 
 </body>
 

@@ -8,6 +8,8 @@
 :root {
     --primary-color: #4056F4;
     --secundary-color: #353531;
+    --btn-avista: #3E6680;
+    --btn-financiamento: #FE9920;
 }
 
 .container {
@@ -16,6 +18,147 @@
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
+}
+
+.container > .menu-principal {
+    background-color: var(--secundary-color);
+    height: 700px;
+    width: 1200px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.container > .menu-principal > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, var(--primary-color), var(--secundary-color));
+    padding: 1em;
+}
+
+.container > .menu-principal > header > .logo {
+    display: flex;
+    align-items: center;
+}
+
+.container > .menu-principal > header > .logo > h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.container > .menu-principal > header > p {
+    font-size: 1.8em;
+    color: #fff;
+    margin-right: 120px;
+}
+
+.menu-hamburger {
+    position: relative;
+}
+
+.menu-toggle {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.container > .menu-principal > h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container > .menu-principal > .btn-clientes {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3em;
+}
+
+.container > .menu-principal > .btn-clientes > button {
+    padding: .7em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background-color: green;
+    cursor: pointer;
+}
+
+.container > .menu-principal > .btn-clientes > .btn-cadastrar > h2 {
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container > .menu-principal > .btn-clientes > .btn-cadastrar {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > .menu-principal > .btn-clientes > .btn-cadastrar > button {
+    padding: .7em;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#btn-avista {
+    background-color: var(--btn-avista);
+}
+
+#btn-financiamento {
+    background-color: var(--btn-financiamento);
 }
 
 .container > .agenda-parcelado {
