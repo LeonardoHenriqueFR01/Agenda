@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="../static/css/agenda.css">
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="agenda-parcelado">
+
+            <div>
+                <a href="#">
+                    
+                    <img src="../static/imagens/seta-voltar.png" alt="seta para voltar para paǵina anterior" width="40px">
+                
+                </a>
+            
+                <h1>Dados do Cliente</h1>
+            
+            </div>
+
+            <form action="/submit" method="POST" autocomplete="off">
+
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required maxlength="40" placeholder="Digite o nome do cliente">
+
+                <label for="phone">Telefone:</label>
+                <input type="number" name="phone" id="phone" required maxlength="10" placeholder="Digite o número de contato do cliente ex: DDD 1234-5678">
+
+                <label for="car">Veiculo:</label>
+                <input type="text" name="car" id="car" maxlength="10" required placeholder="Digite o nome do veiculo">
+
+                <label for="car_value">Valor Veiculo:</label>
+                <input type="number" name="car_value" id="car_value" required placeholder="Digite o valor do veiculo">
+
+                <label for="entrada">Valor Entrada:</label>
+                <input type="text" name="entrada" id="entrada" required placeholder="Digite o valor de entrada do veiculo">
+
+                <label for="parcelas">Parcelas:</label>
+                <input type="number" name="parcelas" id="parcelas" required placeholder="Digite o número de parcelas">
+
+
+                <label for="description">Descrição:</label>
+                <textarea name="description" id="description" placeholder="Digite uma descrição ou situação do cliente"></textarea>
+                
+                <button>Cadastrar</button>
+
+            </form>
+
+        </div>
+
+        <div class="agenda-avista">
+
+            <div>
+                <a href="#">
+                    
+                    <img src="../static/imagens/seta-voltar.png" alt="seta para voltar para paǵina anterior" width="40px">
+                
+                </a>
+            
+                <h1>Dados do Cliente</h1>
+            
+            </div>
+
+            <form action="/submit" method="POST" autocomplete="off">
+
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required maxlength="40" placeholder="Digite o nome do cliente">
+
+                <label for="phone">Telefone:</label>
+                <input type="number" name="phone" id="phone" required maxlength="10" placeholder="Digite o número de contato do cliente ex: DDD 1234-5678">
+
+                <label for="car">Veiculo:</label>
+                <input type="text" name="car" id="car" maxlength="10" required placeholder="Digite o nome do veiculo">
+
+                <label for="car_value">Valor Veiculo:</label>
+                <input type="number" name="car_value" id="car_value" required placeholder="Digite o valor do veiculo">
+
+                <label for="description">Descrição:</label>
+                <textarea name="description" id="description" placeholder="Digite uma descrição ou situação do cliente"></textarea>
+
+                <button>Cadastrar</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

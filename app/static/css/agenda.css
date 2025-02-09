@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #4056F4;
+    --secundary-color: #353531;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.container > .agenda-parcelado {
+    background-color: var(--secundary-color);
+    height: 810px;
+    width: 700px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    display: none;
+}
+
+.container > .agenda-parcelado > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, var(--primary-color), #000);
+    padding: .7em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container > .agenda-parcelado > div > a > img {
+    cursor: pointer;
+}
+
+.container > .agenda-parcelado > div > h1 {
+    font-size: 2.5em;
+    margin-right: 200px;
+    color: #fff;
+}
+
+.container > .agenda-parcelado > form {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.container > .agenda-parcelado > form > label {
+    font-size: 1.3em;
+    margin-top: 18px;
+    color: #fff;
+}
+
+.container > .agenda-parcelado > form > input {
+    padding: .7em;
+    font-size: 1.3em;
+}
+
+.container > .agenda-parcelado > form > textarea {
+    padding: .7em;
+    height: 90px;
+    font-size: 1.3em;
+}
+
+.container > .agenda-parcelado > form > button {
+    padding: .7em;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, var(--primary-color), #000);
+    color: #fff;
+    cursor: pointer;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 1s ease-in-out;
+}
+
+.container > .agenda-parcelado > form > button:hover {
+    background-position: left;
+}
+
+/* Configurações da interface avista */
+
+.container > .agenda-avista {
+    display: none;
+    background-color: var(--secundary-color);
+    height: 680px;
+    width: 700px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.container > .agenda-avista > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, var(--primary-color), #000);
+    padding: .7em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container > .agenda-avista > div > a > img {
+    cursor: pointer;
+}
+
+.container > .agenda-avista > div > h1 {
+    font-size: 2.5em;
+    margin-right: 200px;
+    color: #fff;
+}
+
+.container > .agenda-avista > form {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.container > .agenda-avista > form > label {
+    font-size: 1.3em;
+    margin-top: 18px;
+    color: #fff;
+}
+
+.container > .agenda-avista > form > input {
+    padding: .7em;
+    font-size: 1.3em;
+}
+
+.container > .agenda-avista > form > textarea {
+    padding: .7em;
+    height: 90px;
+    font-size: 1.3em;
+}
+
+.container > .agenda-avista > form > button {
+    padding: .7em;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, var(--primary-color), #000);
+    color: #fff;
+    cursor: pointer;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 1s ease-in-out;
+}
+
+.container > .agenda-avista > form > button:hover {
+    background-position: left;
+}
