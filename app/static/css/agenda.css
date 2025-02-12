@@ -306,3 +306,137 @@
 .container > .agenda-avista > form > button:hover {
     background-position: left;
 }
+
+/* Configurações de responsividade  Interface inicial */
+@media (max-width: 786px) {
+    .container > .menu-principal {
+        width: 80vw;
+        height: 90vh;
+    }
+
+    .container > .menu-principal > header > .logo > img {
+        width: 10vw;
+    }
+
+    .container > .menu-principal > header > .logo > h1 {
+        font-size: 1.3em;
+    }
+
+    .container > .menu-principal > header > p {
+        font-size: 1.1em;
+        margin-right: 0px;
+    }
+
+    .container > .menu-principal > header > .menu-hamburger {
+        width: 3em;
+    }
+
+    .container > .menu-principal > h1 {
+        font-size: 1.6em;
+    }
+
+    .container > .menu-principal > .btn-clientes > button {
+        padding: .6em;
+        font-size: 1.1em;
+    }
+
+    .container > .menu-principal > .btn-clientes > .btn-cadastrar > h2 {
+        font-size: 1.4em;
+    }
+
+    .container > .menu-principal > .btn-clientes > .btn-cadastrar > button {
+        padding: .5em;
+        font-size: 1.1em;
+    }
+
+}
+
+/* Configurações de responsividade formulários */
+@media (max-width: 786px) {
+
+    .container > .agenda-parcelado {
+        height: 100vh;
+        width: 90vw;
+    }
+
+    .container > .agenda-parcelado > div {
+        margin-bottom: 0;   
+    }
+
+    .container > .agenda-parcelado > div > a > img {
+        width: 7vw;
+    }    
+
+    .container > .agenda-parcelado > div > h1 {
+        font-size: 1.3em;
+        margin-right: 90px;
+    }
+
+    .container > .agenda-parcelado > form {
+        height: 50vh;
+        padding: 1em;
+    }
+
+    .container > .agenda-parcelado > form > label {
+        font-size: 1.1em;
+    }
+
+    .container > .agenda-parcelado > form > input {
+        padding: .5em;
+    }
+
+    .container > .agenda-parcelado > form > textarea {
+        padding: .5em;
+        font-size: 1.1em;
+        display: none;
+    }
+
+    .container > .agenda-parcelado > form > button {
+        padding: .6em;
+        font-size: 1.2em;
+    }
+
+    /* Formulário de clientes avista */
+
+    .container > .agenda-avista {
+        height: 75vh;
+        width: 90vw;
+    }
+
+    .container > .agenda-avista > div {
+        margin-bottom: 0;   
+    }
+
+    .container > .agenda-avista > div > a > img {
+        width: 7vw;
+    }    
+
+    .container > .agenda-avista > div > h1 {
+        font-size: 1.3em;
+        margin-right: 90px;
+    }
+
+    .container > .agenda-avista > form {
+        padding: 1em;
+    }
+
+    .container > .agenda-avista > form > label {
+        font-size: 1.1em;
+    }
+
+    .container > .agenda-avista > form > input {
+        padding: .5em;
+    }
+
+    .container > .agenda-avista > form > textarea {
+        padding: .5em;
+        font-size: 1.1em;
+        display: none;
+    }
+
+    .container > .agenda-avista > form > button {
+        padding: .6em;
+        font-size: 1.2em;
+    }
+
+}
