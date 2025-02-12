@@ -9,9 +9,9 @@ Este é um projeto de agenda voltado para o cadastro de clientes interessados na
 - Organização eficiente para facilitar o acompanhamento das negociações.
 
 ## 🔧 Tecnologias Utilizadas
-- **Linguagem:** Python / JavaScript (dependendo da implementação escolhida)
-- **Banco de Dados:** MySQL / SQLite / MongoDB (opcional)
-- **Frameworks:** Flask / Django / Node.js (se for um sistema web)
+- **Linguagem:** Python / JavaScript 
+- **Banco de Dados:**  SQLite 
+- **Frameworks:** Flask 
 
 ## 📌 Objetivo
 O objetivo deste projeto é otimizar o processo de vendas de veículos, permitindo um gerenciamento eficiente dos clientes e suas intenções de compra, garantindo melhor acompanhamento e fechamento de negócios.
