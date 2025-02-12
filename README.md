@@ -26,8 +26,8 @@ Se deseja contribuir para o projeto, siga estas etapas:
 
 ## 📞 Contato
 Caso tenha dúvidas ou sugestões, entre em contato:
-- **Email:** seuemail@exemplo.com
-- **LinkedIn:** [Seu Nome](https://linkedin.com/in/seu-perfil)
+- **Email:** leonardohenriquefr785.com
+- **LinkedIn:** [Leonardo](https://linkedin.com)
 
 ---
 **🚗 Facilitando a compra de veículos de forma prática e organizada!**
