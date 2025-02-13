@@ -1,5 +1,9 @@
 # 📒 Projeto de Agenda para Cadastro de Clientes
 
+![Tela Inicial](/app/project-view/menu.png)
+![Cliente avista](/app/project-view/avista.png)
+![Cliente Financiamento](/app/project-view/financiamento.png)
+
 ## 📝 Descrição
 Este é um projeto de agenda voltado para o cadastro de clientes interessados na compra de veículos. O sistema permite registrar informações essenciais dos clientes, facilitando o gerenciamento de dados para vendas tanto à vista quanto por financiamento.
 
