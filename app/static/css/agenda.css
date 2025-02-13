@@ -310,7 +310,7 @@
 /* Configurações de responsividade  Interface inicial */
 @media (max-width: 786px) {
     .container > .menu-principal {
-        width: 80vw;
+        width: 90vw;
         height: 90vh;
     }
 
@@ -354,8 +354,12 @@
 /* Configurações de responsividade formulários */
 @media (max-width: 786px) {
 
-    .container > .agenda-parcelado {
+    .container {
         height: 100vh;
+    }
+
+    .container > .agenda-parcelado {
+        height: 90vh;
         width: 90vw;
     }
 
@@ -373,33 +377,29 @@
     }
 
     .container > .agenda-parcelado > form {
-        height: 50vh;
         padding: 1em;
     }
 
     .container > .agenda-parcelado > form > label {
         font-size: 1.1em;
+        margin-top: 15px;
     }
 
     .container > .agenda-parcelado > form > input {
-        padding: .5em;
-    }
-
-    .container > .agenda-parcelado > form > textarea {
-        padding: .5em;
+        padding: .2em;
         font-size: 1.1em;
-        display: none;
     }
 
     .container > .agenda-parcelado > form > button {
         padding: .6em;
         font-size: 1.2em;
+        margin-top: 20px;
     }
 
     /* Formulário de clientes avista */
 
     .container > .agenda-avista {
-        height: 75vh;
+        height: 90vh;
         width: 90vw;
     }
 
@@ -418,14 +418,17 @@
 
     .container > .agenda-avista > form {
         padding: 1em;
+        margin-top: 30px;
     }
 
     .container > .agenda-avista > form > label {
         font-size: 1.1em;
+        margin-top: 20px;
     }
 
     .container > .agenda-avista > form > input {
-        padding: .5em;
+        padding: .2em;
+        font-size: 1.1em;
     }
 
     .container > .agenda-avista > form > textarea {
