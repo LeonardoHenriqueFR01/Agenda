@@ -10,6 +10,9 @@
     --secundary-color: #353531;
     --btn-avista: #3E6680;
     --btn-financiamento: #FE9920;
+    --background-content-h1: #26408B;
+    --background-container: #1C1F33; 
+    --border-content: #79BEEE;
 }
 
 .container {
@@ -22,7 +25,7 @@
 
 .container > .menu-principal {
     background-color: var(--secundary-color);
-    height: 700px;
+    height: 750px;
     width: 1200px;
     border-radius: 10px;
     border: 2px solid #fff;
@@ -107,11 +110,12 @@
 .container > .menu-principal > h1 {
     color: #fff;
     font-size: 2.5em;
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
+    margin-left: 30px;
 }
 
-.container > .menu-principal > .btn-clientes {
+.container > .menu-principal > .menu-content > .btn-clientes {
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -120,7 +124,7 @@
     padding: 3em;
 }
 
-.container > .menu-principal > .btn-clientes > button {
+.container > .menu-principal > .menu-content > .btn-clientes > button {
     padding: .7em;
     font-size: 1.3em;
     font-weight: bold;
@@ -131,18 +135,18 @@
     cursor: pointer;
 }
 
-.container > .menu-principal > .btn-clientes > .btn-cadastrar > h2 {
+.container > .menu-principal > .menu-content > .btn-clientes > .btn-cadastrar > h2 {
     color: #fff;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.container > .menu-principal > .btn-clientes > .btn-cadastrar {
+.container > .menu-principal > .menu-content > .btn-clientes > .btn-cadastrar {
     display: flex;
     flex-direction: column;
 }
 
-.container > .menu-principal > .btn-clientes > .btn-cadastrar > button {
+.container > .menu-principal > .menu-content > .btn-clientes > .btn-cadastrar > button {
     padding: .7em;
     font-size: 1.3em;
     font-weight: bold;
@@ -306,6 +310,182 @@
 .container > .agenda-avista > form > button:hover {
     background-position: left;
 }
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-content > .calculadora {
+    height: 580px;
+    width: 600px;
+    border: 2px solid var(--border-content);
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px var(--border-content);
+}
+
+.menu-content > .calculadora > h1 {
+    background-color: var(--background-content-h1);
+    padding: .7em;
+    text-align: center;
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: bold;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.content-options > .opt-calculadora {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+}
+
+.content-options > .opt-calculadora:hover {   
+    transition: .9s;
+    background-color: #bbbaba;
+}
+
+.content-options > .opt-calculadora > .box-calculadora > h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.content-options > .opt-calculadora > .box-calculadora > p {
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+.content-options > .opt-financiamento {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+}
+
+.content-options > .opt-financiamento:hover {   
+    transition: .9s;
+    background-color: #bbbaba;
+}
+
+.content-options > .opt-financiamento > .box-financiamento > h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.content-options > .opt-financiamento > .box-financiamento > p {
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+.content-options > .opt-aplicacao {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+}
+
+.content-options > .opt-aplicacao:hover {   
+    transition: .9s;
+    background-color: #bbbaba;
+}
+
+.content-options > .opt-aplicacao > .box-aplicacao > h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.content-options > .opt-aplicacao > .box-aplicacao > p {
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+.content-options > .opt-valor-futuro {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+}
+
+.content-options > .opt-valor-futuro:hover {   
+    transition: .9s;
+    background-color: #bbbaba;
+}
+
+.content-options > .opt-valor-futuro > .box-valor-futuro > h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.content-options > .opt-valor-futuro > .box-valor-futuro > p {
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+.content-options > .opt-conversor-moedas {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+}
+
+.content-options > .opt-conversor-moedas:hover {   
+    transition: .9s;
+    background-color: #bbbaba;
+}
+
+.content-options > .opt-conversor-moedas > .box-conversor-moedas > h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.content-options > .opt-conversor-moedas > .box-conversor-moedas > p {
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+.content-options > .opt-lucro {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+}
+
+.content-options > .opt-lucro:hover {   
+    transition: .9s;
+    background-color: #bbbaba;
+}
+
+.content-options > .opt-lucro > .box-lucro > h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.content-options > .opt-lucro > .box-lucro > p {
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
 
 /* Configurações de responsividade  Interface inicial */
 @media (max-width: 786px) {
