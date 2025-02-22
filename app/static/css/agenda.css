@@ -29,6 +29,8 @@
     width: 1200px;
     border-radius: 10px;
     border: 2px solid #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .container > .menu-principal > header {
@@ -119,7 +121,6 @@
     height: 50vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     padding: 3em;
 }
@@ -318,7 +319,7 @@
 }
 
 .menu-content > .calculadora {
-    height: 580px;
+    height: 578px;
     width: 600px;
     border: 2px solid var(--border-content);
     border-radius: 7px;
@@ -469,6 +470,8 @@
     padding: .7em;
     cursor: pointer;
     border-bottom: 2px solid #000;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .content-options > .opt-lucro:hover {   
@@ -486,6 +489,65 @@
     margin-top: 5px;
 }
 
+/* Configurações da calculadora */
+.container-calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: none;
+}
+
+.container-calculadora > .content-calculadora > .voltar {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.content-calculadora {
+    height: 550px; 
+    width: 450px;  
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+/* Tela onde os números e resultados aparecem */
+.tela {
+    background: #222;
+    color: white;
+    padding: 20px;
+    font-size: 2.5em; 
+    text-align: right;
+    min-height: 60px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Grade de botões ajustada para preencher melhor a largura */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px; 
+    margin-top: 50px;
+}
+
+/* Estilização dos botões */
+.btn {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 20px; 
+    font-size: 1.8em; 
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Efeito ao passar o mouse */
+.btn:hover {
+    background: #555;
+}
 
 /* Configurações de responsividade  Interface inicial */
 @media (max-width: 786px) {

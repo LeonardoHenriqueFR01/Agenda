@@ -20,6 +20,7 @@ function form_cadastro() {
 
 }
 
+// Função para mostrar senha no formulário
 function togglePassword(inputId, button) {
     let passwordInput = document.getElementById(inputId);
     

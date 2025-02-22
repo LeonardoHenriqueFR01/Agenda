@@ -63,9 +63,9 @@
 
                         <h2>Área de Cadastro:</h2>
 
-                        <button id="btn-avista" onclick="btn_avista()">Cliente Avista</button>
+                        <button id="btn-avista" onclick="btn_avista()">Avista</button>
 
-                        <button id="btn-financiamento" onclick="btn_financiamento()">Cliente Financiamento</button>
+                        <button id="btn-financiamento" onclick="btn_financiamento()">Financiamento</button>
 
                     </div>
 
@@ -77,7 +77,7 @@
 
                     <div class="content-options">
 
-                        <div class="opt-calculadora">
+                        <div class="opt-calculadora" onclick="calculadora()">
                 
                             <div class="box-calculadora">
 
@@ -241,9 +241,50 @@
 
         </div>
 
+        <div class="container-calculadora" id="container-calculadora">
+           
+            <div class="content-calculadora">
+
+                <div class="voltar">
+                    <a href="#" onclick="menu_view()">
+                        
+                        <img src="../static/imagens/seta-voltar.png" alt="seta para voltar para paǵina anterior" width="40px">
+                    
+                    </a>
+                
+                </div>
+              
+                <div class="tela" id="tela"></div>
+              
+                <div class="botoes">
+              
+                    <button class="btn" onclick="limparTela()">C</button>
+                    <button class="btn" onclick="adicionarNumero('7')">7</button>
+                    <button class="btn" onclick="adicionarNumero('8')">8</button>
+                    <button class="btn" onclick="adicionarNumero('9')">9</button>
+                    <button class="btn" onclick="adicionarOperador('+')">+</button>
+                    <button class="btn" onclick="adicionarNumero('4')">4</button>
+                    <button class="btn" onclick="adicionarNumero('5')">5</button>
+                    <button class="btn" onclick="adicionarNumero('6')">6</button>
+                    <button class="btn" onclick="adicionarOperador('-')">-</button>
+                    <button class="btn" onclick="adicionarNumero('1')">1</button>
+                    <button class="btn" onclick="adicionarNumero('2')">2</button>
+                    <button class="btn" onclick="adicionarNumero('3')">3</button>
+                    <button class="btn" onclick="adicionarOperador('*')">*</button>
+                    <button class="btn" onclick="adicionarNumero('0')">0</button>
+                    <button class="btn" onclick="adicionarOperador('/')">/</button>
+                    <button class="btn" onclick="calcularResultado()">=</button>
+        
+                </div>
+        
+            </div>
+        
+        </div>
+ 
     </div>
 
     <script src="../static/js/agenda.js"></script>
+    <script src="../static/js/calculadora.js"></script>
 
 </body>
 
