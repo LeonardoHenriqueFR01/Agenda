@@ -19,3 +19,15 @@ function form_cadastro() {
     login.style.display = 'none'
 
 }
+
+function togglePassword(inputId, button) {
+    let passwordInput = document.getElementById(inputId);
+    
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        button.textContent = "🔓"; // Ícone de cadeado aberto
+    } else {
+        passwordInput.type = "password";
+        button.textContent = "🔒"; // Ícone de cadeado fechado
+    }
+}

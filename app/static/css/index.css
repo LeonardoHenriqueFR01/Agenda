@@ -5,19 +5,84 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --primary-color: #4056F4;
+    --secundary-color: #353531; 
+}
+
 .container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagens/photo-background.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: var(--primary-color);
 }
 
-.container > .content-cadastro > h1 {
+/* Configurações cadeado para mostrar a senha no formulário */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+
+/* Configurações do input de senha */
+
+.container > .content-cadastro > form > .password-container > input {
+    padding: .7em;
+    font-size: 1.2em;
+    border-radius: 0px;
+}
+
+.container > .content-login > form > .password-container > input {
+    padding: .7em;
+    font-size: 1.2em;
+    border-radius: 0px;
+}
+
+/* Configurações formulárioo de cadastro */
+
+.container > .content-cadastro > .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container > .content-cadastro > .logo > .logo-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container > .content-cadastro > .logo > .logo-content > img {
+    width: 40px;
+}
+
+.container > .content-cadastro > .logo > .logo-content > h1{
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.container > .content-cadastro > .logo > h1 {
     font-size: 2.5em;
     text-align: center;
+    color: #fff;
 }
 
 .container > .content-cadastro {
@@ -25,9 +90,9 @@
     width: 400px;
     padding: 1em;
     border-radius: 10px;
-    background-color: #ffffff8c;
+    background-color: var(--secundary-color);
     backdrop-filter: blur(5px);
-    box-shadow: 0px 5px 10px #00000057;
+    box-shadow: 0px 0px 10px #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -41,6 +106,7 @@
 .container > .content-cadastro > form > label {
     font-size: 1.2em;
     margin-top: 15px;
+    color: #fff;
 }
 
 .container > .content-cadastro > form > input {
@@ -51,34 +117,60 @@
 .container > .content-cadastro > form > p {
     font-size: 1.2em;
     margin: 4px;
+    color: #fff;
 }
 
 .container > .content-cadastro > form > p > a {
     text-decoration: none;
-    color: rgb(20, 166, 214);
+    color: var(--primary-color);
 }
 
-.container > .content-cadastro > form > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin-top: 30px;
-}
-
-.container > .content-cadastro > form > a > button {
+.container > .content-cadastro > form > button {
     padding: .9em;
     font-size: 1.2em;
     font-weight: bold;
     border: none;
+    box-shadow: 0px 0px 7px #fff;
     border-radius: 7px;
     color: #fff;
-    background-color: rgb(16, 124, 224);
+    background: linear-gradient(to right, var(--secundary-color), var(--primary-color));
     cursor: pointer;
+    margin-top: 30px;
+    background-size: 150% 100%;
+    background-position: right;
+    transition: background-position .8s ease-in-out;
 }
 
-.container > .content-login > h1 {
+.container > .content-cadastro > form > button:hover {
+    background-position: left;
+}
+
+/* Configurações formulárioo de login */
+
+.container > .content-login > .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container > .content-login > .logo > .logo-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container > .content-login > .logo > .logo-content > img {
+    width: 40px;
+}
+
+.container > .content-login > .logo > .logo-content > h1{
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.container > .content-login > .logo > h1 {
     font-size: 2.5em;
+    color: #fff;
     text-align: center;
 }
 
@@ -87,9 +179,8 @@
     width: 400px;
     padding: 1em;
     border-radius: 10px;
-    background-color: #ffffff8c;
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 5px 10px #00000057;
+    background-color: var(--secundary-color);
+    box-shadow: 0px 0px 10px #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -103,7 +194,8 @@
 
 .container > .content-login > form > label {
     font-size: 1.2em;
-    margin-top: 15px;
+    margin-top: 30px;
+    color: #fff;
 }
 
 .container > .content-login > form > input {
@@ -114,28 +206,30 @@
 .container > .content-login > form > p {
     font-size: 1.2em;
     margin: 4px;
+    color: #fff;
 }
 
 .container > .content-login > form > p > a {
     text-decoration: none;
-    color: rgb(20, 166, 214);
+    color: var(--primary-color);
 }
 
-.container > .content-login > form > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin-top: 30px;
-}
-
-.container > .content-login > form > a > button {
+.container > .content-login > form > button {
     padding: .9em;
     font-size: 1.2em;
     font-weight: bold;
     border: none;
+    box-shadow: 0px 0px 7px #fff;
     border-radius: 7px;
     color: #fff;
-    background-color: rgb(16, 124, 224);
+    background: linear-gradient(to right, var(--secundary-color), var(--primary-color));
     cursor: pointer;
+    margin-top: 30px;
+    background-size: 150% 100%;
+    background-position: right;
+    transition: background-position .8s ease-in-out;
+}
+
+.container > .content-login > form > button:hover {
+    background-position: left;
 }
