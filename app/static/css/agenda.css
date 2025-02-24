@@ -498,13 +498,25 @@
     display: none;
 }
 
+.container-calculadora > .content-calculadora > .logo-calculadora {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.container-calculadora > .content-calculadora > .logo-calculadora > h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
 .container-calculadora > .content-calculadora > .voltar {
     text-align: left;
     margin-bottom: 10px;
 }
 
 .content-calculadora {
-    height: 550px; 
+    height: 600px; 
     width: 450px;  
     background: #333;
     padding: 20px;
@@ -547,6 +559,306 @@
 /* Efeito ao passar o mouse */
 .btn:hover {
     background: #555;
+}
+
+/* Form calculo de financiamento */
+.container > .form-financiamento {
+    display: none;
+    background-color: var(--secundary-color);
+    height: 550px;
+    width: 450px;
+    padding: 1em;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.container > .form-financiamento > p {
+    color: #fff;
+}
+
+.container > .form-financiamento > #voltar {
+    cursor: pointer;
+}
+
+.container > .form-financiamento > #voltar > img {
+    width: 50px;
+}
+
+.container > .form-financiamento > .logo-financiamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container > .form-financiamento > .logo-financiamento > h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.container > .form-financiamento > form {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container > .form-financiamento > form > label {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.container > .form-financiamento > form > input {
+    padding: .7em;
+    font-size: 1.3em;
+}
+
+.container > .form-financiamento > form > button {
+    padding: .7em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    margin-top: 100px;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* Form calculo de aplicação */
+.container > .form-aplicacao {
+    display: none;
+    background-color: var(--secundary-color);
+    height: 650px;
+    width: 450px;
+    padding: 1em;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.container > .form-aplicacao > #voltar {
+    cursor: pointer;
+}
+
+.container > .form-aplicacao > #voltar > img {
+    width: 50px;
+}
+
+.container > .form-aplicacao > .logo-aplicacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container > .form-aplicacao > .logo-aplicacao > h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.container > .form-aplicacao > form {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container > .form-aplicacao > form > label {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.container > .form-aplicacao > form > input {
+    padding: .7em;
+    font-size: 1.3em;
+}
+
+.container > .form-aplicacao > form > button {
+    padding: .7em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    margin-top: 120px;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* Form calculo valor futuro */
+.container > .form-valor-futuro {
+    display: none;
+    background-color: var(--secundary-color);
+    height: 550px;
+    width: 450px;
+    padding: 1em;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.container > .form-valor-futuro > #voltar {
+    cursor: pointer;
+}
+
+.container > .form-valor-futuro > #voltar > img {
+    width: 50px;
+}
+
+.container > .form-valor-futuro > .logo-valor-futuro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container > .form-valor-futuro > .logo-valor-futuro > h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.container > .form-valor-futuro > form {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container > .form-valor-futuro > form > label {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.container > .form-valor-futuro > form > input {
+    padding: .7em;
+    font-size: 1.3em;
+}
+
+.container > .form-valor-futuro > form > button {
+    padding: .7em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    margin-top: 100px;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* Form Conversor de moedas */
+.container > .form-conversor {
+    display: none;
+    background-color: var(--secundary-color);
+    height: 550px;
+    width: 450px;
+    padding: 1em;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.container > .form-conversor > #voltar {
+    cursor: pointer;
+}
+
+.container > .form-conversor > #voltar > img {
+    width: 50px;
+}
+
+.container > .form-conversor > .logo-conversor {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container > .form-conversor > .logo-conversor > h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.container > .form-conversor > form {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container > .form-conversor > form > label {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.container > .form-conversor > form > input {
+    padding: .7em;
+    font-size: 1.3em;
+}
+
+.container > .form-conversor > form > select {
+    padding: .7em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.container > .form-conversor > form > button {
+    padding: .7em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    margin-top: 100px;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* Form calcula Margem de Lucro */
+.container > .form-margem-lucro {
+    display: none;
+    background-color: var(--secundary-color);
+    height: 470px;
+    width: 450px;
+    padding: 1em;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.container > .form-margem-lucro > #voltar {
+    cursor: pointer;
+}
+
+.container > .form-margem-lucro > #voltar > img {
+    width: 50px;
+}
+
+.container > .form-margem-lucro > .logo-margem-lucro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container > .form-margem-lucro > .logo-margem-lucro > h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.container > .form-margem-lucro > form {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container > .form-margem-lucro > form > label {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.container > .form-margem-lucro > form > input {
+    padding: .7em;
+    font-size: 1.3em;
+}
+
+.container > .form-margem-lucro> form > button {
+    padding: .7em;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    margin-top: 100px;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--primary-color);
 }
 
 /* Configurações de responsividade  Interface inicial */
@@ -683,5 +995,6 @@
         padding: .6em;
         font-size: 1.2em;
     }
+
 
 }

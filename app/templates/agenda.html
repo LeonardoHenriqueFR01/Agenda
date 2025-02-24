@@ -91,7 +91,7 @@
                 
                         </div>
 
-                        <div class="opt-financiamento">
+                        <div class="opt-financiamento" data-form="form-financiamento">
 
                             <div class="box-financiamento">
 
@@ -105,7 +105,7 @@
 
                         </div>
 
-                        <div class="opt-aplicacao">
+                        <div class="opt-aplicacao" data-form="form-aplicacao">
 
                             <div class="box-aplicacao">
 
@@ -119,7 +119,7 @@
 
                         </div>
 
-                        <div class="opt-valor-futuro">
+                        <div class="opt-valor-futuro" data-form="form-valor-futuro">
 
                             <div class="box-valor-futuro">
 
@@ -133,7 +133,7 @@
 
                         </div>
 
-                        <div class="opt-conversor-moedas">
+                        <div class="opt-conversor-moedas" data-form="form-conversor">
 
                             <div class="box-conversor-moedas">
 
@@ -147,11 +147,11 @@
 
                         </div>
 
-                        <div class="opt-lucro">
+                        <div class="opt-lucro" data-form="form-margem-lucro">
 
                             <div class="box-lucro">
 
-                                <h2>Margen de Lucro</h2>
+                                <h2>Margem de Lucro</h2>
 
                                 <p>Veja a Margem de Lucro da sua empresa.</p>
 
@@ -253,6 +253,14 @@
                     </a>
                 
                 </div>
+
+                <div class="logo-calculadora">
+
+                    <h1>Calculadora</h1>
+
+                    <img src="../static/imagens/calculadora.png" alt="Photo Calculadora">
+
+                </div>
               
                 <div class="tela" id="tela"></div>
               
@@ -280,11 +288,202 @@
             </div>
         
         </div>
+
+            <div class="form-financiamento" id="form-financiamento">
+
+                <div id="voltar">
+
+                    <img src="../static/imagens/seta-voltar.png" alt="Imagem Seta">
+
+                </div>
+
+                <div class="logo-financiamento">
+
+                    <h1>Financiamento</h1>
+
+                    <img src="../static/imagens/financa.png" alt="Photo Financiamento">
+
+                </div>
+
+                <form action="#" autocomplete="off">
+
+                    <label for="valorFinanciado">Valor Financiado:</label>
+                    <input type="number" id="valorFinanciado" required>
+                
+                    <label for="taxaJuros">Taxa de Juros (% ao mês):</label>
+                    <input type="number" id="taxaJuros" required>
+                
+                    <label for="prazo">Prazo (meses):</label>
+                    <input type="number" id="prazo" required>
+                
+                    <button id="btnFinanciamento">Calcular</button>
+
+                </form>
+
+                <p id="resultadoFinanciamento"></p>
+
+            </div>
+
+            <div class="form-aplicacao" id="form-aplicacao">
+
+                <div id="voltar">
+
+                    <img src="../static/imagens/seta-voltar.png" alt="Imagem Seta">
+
+                </div>
+
+                <div class="logo-aplicacao">
+
+                    <h1>Aplicação</h1>
+
+                    <img src="../static/imagens/cofre.png" alt="Photo Aplicação">
+
+                </div>
+
+                <form action="#" autocomplete="off">
+                
+                    <label for="valorInicial">Valor Inicial:</label>
+                    <input type="number" id="valorInicial" required>
+                
+                    <label for="aporteMensal">Aporte Mensal:</label>
+                    <input type="number" id="aporteMensal" required>
+                
+                    <label for="taxaInvestimento">Taxa de Juros (% ao mês):</label>
+                    <input type="number" id="taxaInvestimento" required>
+                
+                    <label for="tempoInvestimento">Tempo (meses):</label>
+                    <input type="number" id="tempoInvestimento" required>
+                
+                    <button id="btnAplicacao">Calcular</button>
+                
+                </form> 
+                
+                <p id="resultadoAplicacao"></p>
+
+            </div>
+
+            <div class="form-valor-futuro" id="form-valor-futuro">
+
+                <div id="voltar">
+
+                    <img src="../static/imagens/seta-voltar.png" alt="Imagem Seta">
+
+                </div>
+
+                <div class="logo-valor-futuro">
+
+                    <h1>Valor Futuro</h1>
+
+                    <img src="../static/imagens/valor.png" alt="Photo Valor futuro">
+
+                </div>
+
+                <form action="#" autocomplete="off">
+
+                    <label for="capitalInicial">Capital Inicial:</label>
+                    <input type="number" id="capitalInicial" required>
+                
+                    <label for="taxaFixa">Taxa de Juros (% ao período):</label>
+                    <input type="number" id="taxaFixa" required>
+                
+                    <label for="tempo">Tempo (períodos):</label>
+                    <input type="number" id="tempo" required>
+                
+                    <button id="btnValorFuturo">Calcular</button>
+
+                </form>   
+                
+                <p id="resultadoValorFuturo"></p>
+
+            </div>
+            
+            <div class="form-conversor" id="form-conversor">
+
+                <div id="voltar">
+
+                    <img src="../static/imagens/seta-voltar.png" alt="Imagem Seta">
+
+                </div>
+
+                <div class="logo-conversor">
+
+                    <h1>Conversor de Moedas</h1>
+
+                    <img src="../static/imagens/moeda.png" alt="Photo Moedas">
+
+                </div>
+
+                <form autocomplete="off">
+
+                    <label for="valorConverter">Valor:</label>
+
+                    <input type="number" id="valorConverter" required>
+                
+                    <label for="moedaOrigem">De:</label>
+
+                    <select id="moedaOrigem">
+
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="BRL">Real (BRL)</option>
+                        <option value="EUR">Euro (EUR)</option>
+
+                    </select>
+                
+                    <label for="moedaDestino">Para:</label>
+
+                    <select id="moedaDestino">
+
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="BRL">Real (BRL)</option>
+                        <option value="EUR">Euro (EUR)</option>
+
+                    </select>
+                
+                    <button id="btnConversor">Converter</button>
+
+                </form>
+
+                <p id="resultadoConversor"></p>
+                
+            </div>
+
+            <div class="form-margem-lucro" id="form-margem-lucro">
+
+                <div id="voltar">
+
+                    <img src="../static/imagens/seta-voltar.png" alt="Imagem Seta">
+
+                </div>
+
+                <div class="logo-margem-lucro">
+
+                    <h1>Margem de Lucro</h1>
+
+                    <img src="../static/imagens/lucro.png" alt="Photo Margem de Lucro">
+
+                </div>
+
+                <form autocomplete="off">
+                
+                    <label for="custoProduto">Custo do Produto:</label>
+                    <input type="number" id="custoProduto" required>
+                
+                    <label for="precoVenda">Preço de Venda:</label>
+                    <input type="number" id="precoVenda" required>
+                
+                    <button id="btnMargemLucro">Calcular</button>
+                
+                </form> 
+                
+                <p id="resultadoMargemLucro"></p>
+
+            </div>
  
     </div>
 
     <script src="../static/js/agenda.js"></script>
     <script src="../static/js/calculadora.js"></script>
+    <script src="../static/js/form-calculator.js"></script>
 
 </body>
 
