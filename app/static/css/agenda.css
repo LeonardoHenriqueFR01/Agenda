@@ -921,9 +921,23 @@
 
 /* Configurações de responsividade  Interface inicial */
 @media (max-width: 786px) {
+
+    .container {
+        height: 200vh;
+    }
+    
     .container > .menu-principal {
         width: 90vw;
         height: 90vh;
+    }
+
+    .container > .menu-principal > .menu-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container > .menu-principal > .menu-content > .calculadora {
+        width: 80vw;
     }
 
     .container > .menu-principal > header > .logo > img {
