@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         let PMT = calcularPrestacao(P, i, n);
+        document.getElementById('resultadoFinanciamento').style.display = "flex"
         document.getElementById("resultadoFinanciamento").innerHTML = `Valor da Prestação: R$ ${PMT.toFixed(2)}`;
     }
 
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         let FV = calcularValorFuturoAplicacao(P, A, i, n);
+        document.getElementById('resultadoAplicacao').style.display = "flex"
         document.getElementById("resultadoAplicacao").innerText = `Valor Futuro da Aplicação: R$ ${FV.toFixed(2)}`;
     }
 
@@ -71,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let taxa = taxas[`${moedaOrigem}-${moedaDestino}`] || 1;
         let resultado = valor * taxa;
 
+        document.getElementById('resultadoConversor').style.display = "flex"
         document.getElementById("resultadoConversor").innerText = `Valor convertido: ${moedaDestino} ${resultado.toFixed(2)}`;
     }
 
@@ -85,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         let margem = ((venda - custo) / venda) * 100;
+        document.getElementById('resultadoMargemLucro').style.display = "flex"
         document.getElementById("resultadoMargemLucro").innerText = `Margem de Lucro: ${margem.toFixed(2)}%`;
     }
 
@@ -100,7 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         let VF = calcularValorFuturo(P, i, n);
+        document.getElementById('resultadoValorFuturo').style.display = "flex"
         document.getElementById("resultadoValorFuturo").innerText = `Valor Futuro: R$ ${VF.toFixed(2)}`;
+        
     }
 
     // Associando os botões a suas respectivas funções
@@ -109,5 +115,4 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("btnConversor").onclick = converterMoeda;
     document.getElementById("btnMargemLucro").onclick = calcularMargemLucro;
     document.getElementById("btnValorFuturo").onclick = calcularValorFuturo;
-
 });
