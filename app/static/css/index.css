@@ -145,6 +145,12 @@
     background-position: left;
 }
 
+.container > .content-cadastro > form > .error {
+    text-align: center;
+    color: red;
+    font-size: 1.3em;
+}
+
 /* Configurações formulárioo de login */
 
 .container > .content-login > .logo {
@@ -232,4 +238,10 @@
 
 .container > .content-login > form > button:hover {
     background-position: left;
+}
+
+.container > .content-login > form > .error {
+    text-align: center;
+    color: red;
+    font-size: 1.3em;
 }

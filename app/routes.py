@@ -73,7 +73,7 @@ def login():
             return redirect(url_for('main_bp.agenda', name=user.name))
         else:
             # Caso as credenciais sejam inválidas
-            error_message = 'Senha ou email incorretos!'
+            error_message = 'Email ou senha incorreto!'
             return render_template('index.html', error=error_message)
     
     return render_template('index.html')

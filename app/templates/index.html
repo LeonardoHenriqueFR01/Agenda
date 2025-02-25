@@ -50,6 +50,10 @@
 
                 <p>Já tem uma conta? <a href="#" onclick="form_login()">Clique aqui para fazer Login</a></p>
 
+                {% if error %}
+                    <div class="error">{{ error }}</div>
+                {% endif %}
+
                 <button>Continuar</button>
 
             </form>      
@@ -87,6 +91,10 @@
                 </div>
 
                 <p>Não tem uma conta? <a href="#" onclick="form_cadastro()">Clique aqui para Cadastrar</a></p>
+                
+                {% if error %}
+                    <div class="error">{{ error }}</div>
+                {% endif %}
 
                 <button>Continuar</button>
 
