@@ -54,9 +54,9 @@
                     <div class="error">{{ error }}</div>
                 {% endif %}
 
-                <button id="btn_cadastro">Continuar</button>
+                <button id="btn_cadastro" onclick="get_cadastro()">Continuar</button>
 
-                <div id="load">
+                <div id="load_cadastro">
 
                     <button>
                         <div class="spin"></div>
@@ -86,8 +86,8 @@
 
             <form action="/login" method="POST" autocomplete="off">
 
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required minlength="12" placeholder="Digite seu email aqui">
+                <label for="email_login">Email:</label>
+                <input type="email" name="email_login" id="email_login" required minlength="12" placeholder="Digite seu email aqui">
 
                 <label for="password">Senha:</label>
                 
@@ -104,9 +104,9 @@
                     <div class="error">{{ error }}</div>
                 {% endif %}
 
-                <button id="btn_login">Continuar</button>
+                <button id="btn_login" onclick="get_login()">Continuar</button>
 
-                <div id="load">
+                <div id="load_login">
 
                     <button>
                         <div class="spin"></div>

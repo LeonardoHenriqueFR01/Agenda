@@ -296,11 +296,15 @@
 
 /* Configurações button spin */
 
-#load {
+#load_cadastro {
     display: none;
 }
 
-.content-cadastro > form > #load > button {
+#load_login {
+    display: none;
+}
+
+.content-cadastro > form > #load_cadastro > button {
     width: 100%;
     padding: .2em;
     font-size: 1.2em;
@@ -320,7 +324,7 @@
     justify-content: center;
 }
 
-.content-cadastro > form > #load > button > .spin {
+.content-cadastro > form > #load_cadastro > button > .spin {
     height: 40px;
     width: 40px;
     border: 3px solid #fff;
@@ -333,7 +337,7 @@
     animation-iteration-count: infinite;
 }
 
-.content-login > form > #load > button {
+.content-login > form > #load_login > button {
     width: 100%;
     padding: .2em;
     font-size: 1.2em;
@@ -353,7 +357,7 @@
     justify-content: center;
 }
 
-.content-login > form > #load > button > .spin {
+.content-login > form > #load_login > button > .spin {
     height: 40px;
     width: 40px;
     border: 3px solid #fff;
