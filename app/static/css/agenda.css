@@ -15,6 +15,12 @@
     --border-content: #79BEEE;
 }
 
+body {
+    height: 100vh;
+
+    background-color: var(--primary-color);
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -919,7 +925,7 @@
     background-color: var(--primary-color);
 }
 
-/* Configurações de responsividade  Interface inicial */
+/* Configurações de responsividade Interface inicial */
 @media (max-width: 786px) {
 
     .container {
@@ -928,7 +934,7 @@
     
     .container > .menu-principal {
         width: 90vw;
-        height: 90vh;
+        height: 70vh;
     }
 
     .container > .menu-principal > .menu-content {
@@ -961,18 +967,18 @@
         font-size: 1.6em;
     }
 
-    .container > .menu-principal > .btn-clientes > button {
+    .container > .menu-principal .menu-content > .btn-clientes > button {
         padding: .6em;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .container > .menu-principal > .btn-clientes > .btn-cadastrar > h2 {
         font-size: 1.4em;
     }
 
-    .container > .menu-principal > .btn-clientes > .btn-cadastrar > button {
-        padding: .5em;
-        font-size: 1.1em;
+    .container > .menu-principal > .menu-content > .btn-clientes > .btn-cadastrar > button {
+        padding: .6em;
+        font-size: 1em;
     }
 
 }
@@ -1068,4 +1074,56 @@
         font-size: 1.2em;
     }
 
+}
+
+/* Configurações de responsividade área de calculos */
+
+@media (max-width: 786px) {
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-calculadora > .box-calculadora > h2 {    
+        font-size: 1.6em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-calculadora > .box-calculadora > p {    
+        font-size: 1em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-financiamento > .box-financiamento > h2 {    
+        font-size: 1.6em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-financiamento > .box-financiamento > p {    
+        font-size: 1em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-aplicacao > .box-aplicacao > h2 {    
+        font-size: 1.6em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-aplicacao > .box-aplicacao > p {    
+        font-size: 1em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-valor-futuro > .box-valor-futuro > h2 {    
+        font-size: 1.6em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-valor-futuro > .box-valor-futuro > p {    
+        font-size: 1em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-conversor-moedas > .box-conversor-moedas > h2 {    
+        font-size: 1.6em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-conversor-moedas > .box-conversor-moedas > p {    
+        font-size: 1em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-lucro > .box-lucro > h2 {    
+        font-size: 1.6em;
+    }
+
+    .menu-principal > .menu-content > .calculadora > .content-options > .opt-lucro > .box-lucro > p {    
+        font-size: 1em;
+    }
 }
