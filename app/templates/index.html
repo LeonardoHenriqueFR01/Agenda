@@ -33,16 +33,16 @@
             <form action="/cadastro" method="POST" autocomplete="off">
 
                 <label for="name">Nome:</label>
-                <input type="text" name="name" id="name" required maxlength="40">
+                <input type="text" name="name" id="name" required minlength="3" placeholder="Digite seu nome aqui">
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required minlength="12" placeholder="Digite seu email aqui">
 
                 <label for="password">Senha:</label>
                 
                 <div class="password-container">
                 
-                    <input type="password" name="password" id="cadastro-password" required minlength="8" maxlength="20">
+                    <input type="password" name="password" id="cadastro-password" required minlength="8" maxlength="20" placeholder="Digite sua senha aqui">
                 
                     <button type="button" class="toggle-password" onclick="togglePassword('cadastro-password', this)">🔒</button>
                 
@@ -79,13 +79,13 @@
             <form action="/login" method="POST" autocomplete="off">
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required minlength="12" placeholder="Digite seu email aqui">
 
                 <label for="password">Senha:</label>
                 
                 <div class="password-container">
                 
-                    <input type="password" name="password" id="login-password" required minlength="8" maxlength="20">
+                    <input type="password" name="password" id="login-password" required minlength="8" maxlength="20" placeholder="Digite sua senha aqui">
                     <button type="button" class="toggle-password" onclick="togglePassword('login-password', this)">🔒</button>
                 
                 </div>

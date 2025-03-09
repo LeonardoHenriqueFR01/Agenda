@@ -48,12 +48,36 @@
     padding: .7em;
     font-size: 1.2em;
     border-radius: 0px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+
+    color: #fff;
+    background-color: transparent;
 }
 
 .container > .content-login > form > .password-container > input {
     padding: .7em;
     font-size: 1.2em;
     border-radius: 0px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+
+    color: #fff;
+    background-color: transparent;
+}
+
+.container > .content-cadastro > form > .password-container > input:focus {
+    transition: .8s;
+
+    border-bottom-color: var(--primary-color);
+}
+
+.container > .content-login > form > .password-container > input:focus {
+    transition: .8s;
+
+    border-bottom-color: var(--primary-color);
 }
 
 /* Configurações formulárioo de cadastro */
@@ -112,6 +136,18 @@
 .container > .content-cadastro > form > input {
     padding: .7em;
     font-size: 1.2em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+
+    color: #fff;
+    background-color: transparent;
+}
+
+.container > .content-cadastro > form > input:focus {
+    transition: .8s;
+
+    border-bottom-color: var(--primary-color);
 }
 
 .container > .content-cadastro > form > p {
@@ -207,6 +243,18 @@
 .container > .content-login > form > input {
     padding: .7em;
     font-size: 1.2em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+
+    color: #fff;
+    background-color: transparent;
+}
+
+.container > .content-login > form > input:focus {
+    transition: .8s;
+
+    border-bottom-color: var(--primary-color);
 }
 
 .container > .content-login > form > p {
