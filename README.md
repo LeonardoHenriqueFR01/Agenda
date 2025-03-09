@@ -1,6 +1,6 @@
 # 📒 Projeto de Agenda para Cadastro de Clientes
 
-![Tela Inicial](/app/project-view/menu.png)
+![Tela Inicial](/app/project-view/menuu.png)
 ![Cliente avista](/app/project-view/avista.png)
 ![Cliente Financiamento](/app/project-view/financiamento.png)
 
