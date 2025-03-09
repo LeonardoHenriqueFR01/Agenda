@@ -293,3 +293,88 @@
     color: red;
     font-size: 1.3em;
 }
+
+/* Configurações button spin */
+
+#load {
+    display: none;
+}
+
+.content-cadastro > form > #load > button {
+    width: 100%;
+    padding: .2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 0px 7px #fff;
+    border-radius: 7px;
+    color: #fff;
+    background: linear-gradient(to right, var(--secundary-color), var(--primary-color));
+    cursor: pointer;
+    margin-top: 30px;
+    background-size: 150% 100%;
+    background-position: right;
+    transition: background-position .8s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-cadastro > form > #load > button > .spin {
+    height: 40px;
+    width: 40px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.content-login > form > #load > button {
+    width: 100%;
+    padding: .2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 0px 7px #fff;
+    border-radius: 7px;
+    color: #fff;
+    background: linear-gradient(to right, var(--secundary-color), var(--primary-color));
+    cursor: pointer;
+    margin-top: 30px;
+    background-size: 150% 100%;
+    background-position: right;
+    transition: background-position .8s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-login > form > #load > button > .spin {
+    height: 40px;
+    width: 40px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Configurações keyframe spin button */
+
+@keyframes spin {
+   0% {
+        transform: rotate(0deg);
+   } 
+
+   100% {   
+        transform: rotate(360deg);
+   }
+
+}
