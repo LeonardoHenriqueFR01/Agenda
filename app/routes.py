@@ -1,5 +1,7 @@
 from flask import render_template, request, redirect, url_for, session, Blueprint
+from werkzeug.security import generate_password_hash, check_password_hash
 from .models import User, db
+from time import sleep
 
 
 # Instancia para o Blueprint
@@ -32,10 +34,13 @@ def cadastro():
         user_exists = User.query.filter_by(email=email).first()
         if user_exists:
             error_message = "Este email já está registrado!"
-            return render_template('index.html', error=error_message)
+            return render_template('index.html', error_cadastro=error_message)
+
+        # Hash da password
+        hash_password = generate_password_hash(password)
 
         # Criação de um novo usuário e adição ao banco de dados
-        user = User(name=name, email=email, password=password)
+        user = User(name=name, email=email, password=hash_password)
 
         # Adciona o usuário ao banco de dados
         db.session.add(user)
@@ -43,9 +48,9 @@ def cadastro():
 
         # Armazena os dados na sessão
         session['name'] = name
-        session['email'] = email
 
         # Redireciona para página de agenda
+        sleep(3)
         return redirect(url_for('main_bp.agenda', name=name))
     
     return render_template('index.html')
@@ -57,23 +62,21 @@ def login():
     error_message = None # Variável para armazenar mensagem de error    
 
     if request.method == 'POST':
-        email = request.form.get('email')
+        email = request.form.get('email_login')
         password = request.form.get('password')
 
         # Verifica se o usuário existe no banco de dados
         user = User.query.filter_by(email=email).first()
 
         # Verifica se a senha corresponde
-        if user and user.password == password:
-            # Armazena os dados na sessão
-            session['name'] = user.name
-            session['email'] = user.email
-
+        if user and check_password_hash(user.password, password):
+            
             # Redireciona para página de agenda
-            return redirect(url_for('main_bp.agenda', name=user.name))
+            sleep(3)
+            return redirect(url_for('main_bp.agenda'))
         else:
             # Caso as credenciais sejam inválidas
             error_message = 'Email ou senha incorretos!'
-            return render_template('index.html', error=error_message)
+            return render_template('index.html', error_login=error_message)
     
     return render_template('index.html')
